@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "mechanic@gmail.com",
+      "level": "Expert",
+      "mobile": "7488277334",
+      "name": "Mechanic",
+      "password": "Maa@123",
+      "picture": "/register/user-icon.webp",
+      "role": "mechanic"
+    },
+    {
+      "id": 2,
+      "email": "admin@gmail.com",
+      "level": "Expert",
+      "mobile": "0000000000",
+      "name": "System Admin",
+      "password": "Admin@123",
+      "picture": "/register/user-icon.webp",
+      "role": "admin"
+    },
+    {
+      "id": 1779523522456,
+      "name": "Neha Kumari",
+      "email": "nehakash87.yup@gmail.com",
+      "mobile": "7488277335",
+      "password": "Maa@123",
+      "level": "Medium",
+      "picture": "data:image/jpeg;base64,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",
+      "role": "mechanic"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "toolName": "Hammer",
+      "category": "Hammer",
+      "quantity": 4,
+      "image": "/tools/hammer-tool.jpg"
+    },
+    {
+      "id": 2,
+      "toolName": "Screw Driver",
+      "category": "Screw Driver",
+      "quantity": 6,
+      "image": "/tools/screw-driver.png"
+    },
+    {
+      "id": 3,
+      "toolName": "Wrench",
+      "category": "Wrench",
+      "quantity": 3,
+      "image": "/tools/wrench.jpg"
+    },
+    {
+      "id": 4,
+      "toolName": "Plier",
+      "category": "Plier",
+      "quantity": 6,
+      "image": "/tools/plier.jfif"
+    }
+  ],
+  "issues": [
+    {
+      "id": 1779523553068,
+      "toolId": 1,
+      "toolName": "Hammer",
+      "mid": 1779523522456,
+      "mechanicName": "Neha Kumari",
+      "mechanicLevel": "Medium",
+      "issueDate": "2026-05-23T08:05:53.068Z",
+      "returnDate": null,
+      "status": "Issued"
+    },
+    {
+      "id": 1779523610205,
+      "toolId": 1,
+      "toolName": "Hammer",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:06:50.205Z",
+      "returnDate": "2026-05-23T08:10:16.867Z",
+      "status": "Returned"
+    },
+    {
+      "id": 1779523614840,
+      "toolId": 2,
+      "toolName": "Screw Driver",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:06:54.840Z",
+      "returnDate": "2026-05-23T08:10:26.681Z",
+      "status": "Returned"
+    },
+    {
+      "id": 1779523617547,
+      "toolId": 3,
+      "toolName": "Wrench",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:06:57.547Z",
+      "returnDate": "2026-05-23T08:10:33.978Z",
+      "status": "Returned"
+    },
+    {
+      "id": 1779523623399,
+      "toolId": 2,
+      "toolName": "Screw Driver",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:07:03.399Z",
+      "returnDate": null,
+      "status": "Issued"
+    },
+    {
+      "id": 1779523828451,
+      "toolId": 3,
+      "toolName": "Wrench",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:10:28.451Z",
+      "returnDate": null,
+      "status": "Issued"
+    },
+    {
+      "id": 1779523844888,
+      "toolId": 2,
+      "toolName": "Screw Driver",
+      "mid": 1,
+      "mechanicName": "Mechanic",
+      "mechanicLevel": "Expert",
+      "issueDate": "2026-05-23T08:10:44.888Z",
+      "returnDate": null,
+      "status": "Issued"
+    }
+  ]
+}
