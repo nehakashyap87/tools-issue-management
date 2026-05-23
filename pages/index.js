@@ -32,11 +32,7 @@ export default function Home() {
 
             <div className="col-md-6 text-center">
               <div
-                className="p-4 rounded-4 shadow-lg"
-                style={{
-                  background: "rgba(255,255,255,0.1)",
-                  backdropFilter: "blur(10px)",
-                }} >
+                className="p-4 rounded-4 shadow-lg inventory">
                 <h3>🔧 Inventory Dashboard</h3>
                 <p className="mb-0">
                   Track tools, manage issues & returns easily
