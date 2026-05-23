@@ -38,7 +38,6 @@ export default function Dashboard() {
     fetchIssues();
     fetchMechanics();
 
-    // Auto-refresh data every 5 seconds to keep dashboard synced
     const interval = setInterval(() => {
       fetchTools();
       fetchIssues();
@@ -136,8 +135,8 @@ export default function Dashboard() {
 
   // Calculate statistics
   const totalToolsCount = tools.length;
-  const totalQuantity = tools.reduce((acc, t) => acc + (t.quantity || 0), 0);
-  const activeIssues = issues.filter(i => i.status === "Issued").length;
+  const totalQuantity = tools?.reduce((acc, t) => acc + (t.quantity || 0), 0);
+  const activeIssues = issues?.filter(i => i.status === "Issued").length;
   const totalMechanics = mechanics.length;
 
   return (
@@ -146,7 +145,6 @@ export default function Dashboard() {
       <div className="container-fluid min-vh-100 py-5 bg-light">
         <div className="container">
           
-          {/* Header */}
           <div className="row align-items-center justify-content-between mb-5">
             <div className="col-md-7 mb-3 mb-md-0">
               <h1 className="fw-bold">Admin Inventory Dashboard</h1>
@@ -162,7 +160,7 @@ export default function Dashboard() {
                   style={{ borderRadius: '12px' }}
                 >
                   <option value="">-- Assign Mechanic --</option>
-                  {mechanics.map((m) => (
+                  {mechanics?.map((m) => (
                     <option key={m.id} value={m.id}>
                       {m.name} ({m.level})
                     </option>
@@ -176,7 +174,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Stats Bar */}
           <div className="row mb-5 gap-3 gap-md-0">
             <div className="col-sm-6 col-md-3 mb-3">
               <div className="glass-card p-4 border-start border-primary border-4 rounded-3 h-100">
@@ -248,7 +245,7 @@ export default function Dashboard() {
                 <Link href="/admin/add-tool" className="btn btn-primary btn-sm mt-2">Add First Tool</Link>
               </div>
             ) : (
-              tools.map((tool) => (
+              tools?.map((tool) => (
                 <div className="col-sm-6 col-md-4 col-lg-3 mb-4" key={tool.id}>
                   <div className="glass-card border-0 rounded-4 overflow-hidden h-100 d-flex flex-column">
                     <div className="position-relative bg-white d-flex align-items-center justify-content-center p-3" style={{ height: "180px" }}>

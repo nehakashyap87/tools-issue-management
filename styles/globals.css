@@ -1,6 +1,4 @@
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
-
 :root {
   --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   --secondary-gradient: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
@@ -20,7 +18,7 @@ html, body {
   background-color: var(--body-bg);
   color: #1e293b;
 }
-
+ 
 * {
   box-sizing: border-box;
 }
@@ -78,7 +76,9 @@ html, body {
   font-size: 0.95rem;
   transition: all 0.2s ease;
 }
-
+.navbar-img {
+  width: '38px'!important; height: '38px'!important; object-fit: 'cover'!important;
+}
 .form-control:focus, .form-select:focus {
   border-color: #6366f1;
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
@@ -109,8 +109,8 @@ button:active {
   background-color: #e0e7ff;
   color: #4338ca;
 }
+.footer{background:linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)}
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }

@@ -34,7 +34,6 @@ export default function Dashboard() {
     fetchTools();
     fetchIssues();
 
-    // Auto-refresh every 5 seconds to keep sync
     const interval = setInterval(() => {
       fetchTools();
       fetchIssues();
@@ -152,7 +151,6 @@ export default function Dashboard() {
       <div className="container-fluid min-vh-100 py-5 bg-light">
         <div className="container">
           
-          {/* Welcome Profile Bar */}
           <div className="glass-card p-4 mb-5 border-0 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
             <div className="d-flex align-items-center gap-3">
               <img
@@ -188,7 +186,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Available Tools Selection */}
           <h3 className="fw-bold mb-4 d-flex align-items-center gap-2">
             <i className="bi bi-wrench-adjustable text-primary"></i> Available Inventory
           </h3>
@@ -248,7 +245,6 @@ export default function Dashboard() {
 
           <hr className="my-5" />
 
-          {/* My Issued Tools Table/Grid */}
           <h3 className="fw-bold mb-4 d-flex align-items-center gap-2">
             <i className="bi bi-journal-arrow-down text-warning"></i> My Issued Tools
           </h3>

@@ -2,11 +2,7 @@ export default function CheckFooter() {
   return (
     <>
     <footer
-      className="text-center py-2 mt-1 mb-0"
-        style={{
-          background:
-            "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        }}>
+      className="text-center py-2 mt-1 mb-0 footer">
       <p className="mb-0 text-white">
         © {new Date().getFullYear()} Tools Issue Management System
       </p>

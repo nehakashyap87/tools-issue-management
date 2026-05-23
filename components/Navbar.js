@@ -26,13 +26,11 @@ export default function Navbar({ title }) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 shadow-sm py-3">
       <div className="container-fluid max-width-container">
         
-        {/* Brand / Logo */}
         <Link href="/" className="navbar-brand d-flex align-items-center gap-2 fw-bold text-gradient">
           <i className="bi bi-tools text-primary"></i>
           <span>{title || "Tools Management System"}</span>
         </Link>
 
-        {/* Hamburger Toggle */}
         <button 
           className="navbar-toggler border-0" 
           type="button" 
@@ -45,7 +43,6 @@ export default function Navbar({ title }) {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Nav Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 gap-2">
             {user?.role === 'admin' && (
@@ -96,13 +93,13 @@ export default function Navbar({ title }) {
                 <img 
                   src={user.picture || '/register/user-icon.webp'} 
                   alt="Profile" 
-                  className="rounded-circle border border-2 border-primary"
-                  style={{ width: '38px', height: '38px', objectFit: 'cover' }}
+                  width={50}
+                  className="rounded-circle border border-2 border-primary "
                   onError={(e) => { e.target.src = '/register/user-icon.webp'; }}
                 />
-                <div className="d-none d-md-block text-start" style={{ lineHeight: '1.2' }}>
+                <div className="d-none d-md-block text-start" >
                   <div className="text-white fw-bold fs-6">{user.name}</div>
-                  <small className="text-muted text-uppercase" style={{ fontSize: '0.7rem', letterSpacing: '0.05em' }}>
+                  <small className="text-muted text-uppercase">
                     {user.role === 'admin' ? 'Administrator' : `${user.level} Mechanic`}
                   </small>
                 </div>
